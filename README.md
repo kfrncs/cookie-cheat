@@ -8,8 +8,8 @@ from Orteil. Requires pyautogui
 
 ### Example:
 
-1. Use conjure_calc(x) will return the number of cookies that you should
-keep for optimal "Conjure Baked Goods" use.
+1. conjure_calc(x) will return the number of cookies that you should
+keep for optimal "Conjure Baked Goods" use (requires Wizard Tower).
 x is your current Cookies Per Second (CPS), input *as a string* ending in:
 
 'm', million                                                                                                           
