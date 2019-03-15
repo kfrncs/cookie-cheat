@@ -11,6 +11,7 @@ from Orteil. Requires pyautogui
 1. Use conjure_calc(x) will return the number of cookies that you should
 keep for optimal "Conjure Baked Goods" use.
 x is your current Cookies Per Second (CPS), input *as a string* ending in:
+
 'm', million                                                                                                           
 'b', billion                                                                                                           
 't', trillion                                                                                                          
