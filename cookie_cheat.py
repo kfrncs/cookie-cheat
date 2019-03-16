@@ -110,5 +110,14 @@ def autoclick():
         time.sleep(.01)
         pyautogui.click(x=200, y=350, clicks=500, interval=0.01) 
 
+def pledger():
+    while True:
+        pyautogui.click(975, 630)
+        time.sleep(.05)
+        pyautogui.click(975, 630)
+        time.sleep(.05)
+        pyautogui.click(1035, 630)
+        time.sleep(.05)
+
 # TODO: Add converter small-numbers functionality,
 #       user sets where they are (million, billion, trillion)
