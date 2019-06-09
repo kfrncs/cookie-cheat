@@ -25,11 +25,34 @@ while True:
     # if a golden cookie is found, click it,
     # then clear the variable
     try:
-        shimmer = browser.find_element_by_id('shimmer')
-        tprint('shimmer found')
-        shimmer.click()
-        tprint('shimmer clicked')
-        del shimmer
+        shimmers = browser.find_element_by_id('shimmers')
+        shimmers.click()
+        tprint('shimmers clicked')
+        del shimmers
         break
     except:
-        tprint('shimmer not found')
+        tprint('shimmers not found')
+
+    for i in range(0,10):
+        try:
+            product = browser.find_element_by_id(f'product{i}')
+            product.click()
+            tprint(f'product{i} clicked')
+            big_cookie.click()
+
+        except:
+            tprint(f'product{i} not found')
+            big_cookie.click()
+            break
+    
+    for i in range(0,10):
+        try:
+            upgrade = browser.find_element_by_id(f'upgrade{i}')
+            upgrade.click()
+            tprint(f'upgrade{i} clicked')
+            big_cookie.click()
+
+        except:
+            tprint(f'upgrade{i} not found')
+            big_cookie.click()
+            break
